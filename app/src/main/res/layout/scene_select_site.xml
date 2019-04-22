@@ -67,6 +67,15 @@
                         android:gravity="center_vertical"
                         android:textSize="@dimen/text_medium"
                         android:text="@string/site_e"/>
+                  
+                  <RadioButton
+                        android:id="@+id/site_e_proxy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/keyline_margin"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/text_medium"
+                        android:text="@string/site_e_proxy"/>
 
                     <RadioButton
                         android:id="@+id/site_ex"
