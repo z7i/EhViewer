@@ -27,7 +27,7 @@ public class EhUrl {
 
     public static final int SITE_E = 0;
     public static final int SITE_EX = 1;
-    public static final int SITE_E_PROXy = 2;
+    public static final int SITE_E_PROXY = 2;
 
     public static final String DOMAIN_EX = "exhentai.org";
     public static final String DOMAIN_E_PROXY = "e-hentai.nhent.ai";
