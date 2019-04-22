@@ -41,6 +41,7 @@
 
     <string-array name="gallery_site_entries" translatable="false">
         <item>@string/site_e</item>
+        <item>@string/site_e_proxy</item>
         <item>@string/site_ex</item>
     </string-array>
 
