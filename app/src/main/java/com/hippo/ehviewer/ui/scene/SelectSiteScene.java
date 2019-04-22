@@ -77,6 +77,12 @@ public class SelectSiteScene extends SolidScene implements View.OnClickListener 
                     startSceneForCheckStep(CHECK_STEP_SELECT_SITE, getArguments());
                     finish();
                     break;
+                case R.id.site_e_proxy:
+                    Settings.putSelectSite(false);
+                    Settings.putGallerySite(EhUrl.SITE_E_PROXY);
+                    startSceneForCheckStep(CHECK_STEP_SELECT_SITE, getArguments());
+                    finish();
+                    break;
                 case R.id.site_ex:
                     Settings.putSelectSite(false);
                     Settings.putGallerySite(EhUrl.SITE_EX);
