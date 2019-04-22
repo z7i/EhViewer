@@ -27,20 +27,25 @@ public class EhUrl {
 
     public static final int SITE_E = 0;
     public static final int SITE_EX = 1;
+    public static final int SITE_E_PROXy = 2;
 
     public static final String DOMAIN_EX = "exhentai.org";
+    public static final String DOMAIN_E_PROXY = "e-hentai.nhent.ai";
     public static final String DOMAIN_E = "e-hentai.org";
     public static final String DOMAIN_LOFI = "lofi.e-hentai.org";
 
     public static final String HOST_EX = "https://" + DOMAIN_EX + "/";
+    public static final String HOST_E_PROXY = "https://" + DOMAIN_E_PROXY + "/";
     public static final String HOST_E = "https://" + DOMAIN_E + "/";
 
     public static final String API_SIGN_IN = "https://forums.e-hentai.org/index.php?act=Login&CODE=01";
 
     public static final String API_E = HOST_E + "api.php";
+    public static final String API_E_PROXY = HOST_E_PROXY + "api.php";
     public static final String API_EX = HOST_EX + "api.php";
 
     public static final String URL_POPULAR_E = "https://e-hentai.org/popular";
+    public static final String URL_POPULAR_E_PROXY = "https://e-hentai.nhent.ai/popular";
     public static final String URL_POPULAR_EX = "https://exhentai.org/popular";
 
     public static final String URL_IMAGE_SEARCH_E = "https://upload.e-hentai.org/image_lookup.php";
@@ -49,22 +54,28 @@ public class EhUrl {
     public static final String URL_SIGN_IN = "https://forums.e-hentai.org/index.php?act=Login";
     public static final String URL_REGISTER = "https://forums.e-hentai.org/index.php?act=Reg&CODE=00";
     public static final String URL_FAVORITES_E = HOST_E + "favorites.php";
+    public static final String URL_FAVORITES_E_PROXY = HOST_E_PROXY + "favorites.php";
     public static final String URL_FAVORITES_EX = HOST_EX + "favorites.php";
     public static final String URL_FORUMS = "https://forums.e-hentai.org/";
 
     public static final String REFERER_EX = "https://" + DOMAIN_EX;
+    public static final String REFERER_E_PROXY = "https://" + DOMAIN_E_PROXY;
     public static final String REFERER_E = "https://" + DOMAIN_E;
 
     public static final String ORIGIN_EX = REFERER_EX;
+    public static final String ORIGIN_E_PROXY = REFERER_E_PROXY;
     public static final String ORIGIN_E = REFERER_E;
 
     public static final String URL_UCONFIG_E = HOST_E + "uconfig.php";
+    public static final String URL_UCONFIG_E_PROXY = HOST_E_PROXY + "uconfig.php";
     public static final String URL_UCONFIG_EX = HOST_EX + "uconfig.php";
 
     public static final String URL_MY_TAGS_E = HOST_E + "mytags";
+    public static final String URL_MY_TAGS_E_PROXY = HOST_E_PROXY + "mytags";
     public static final String URL_MY_TAGS_EX = HOST_EX + "mytags";
 
     public static final String URL_WATCHED_E = HOST_E + "watched";
+    public static final String URL_WATCHED_E_PROXY = HOST_E_PROXY + "watched";
     public static final String URL_WATCHED_EX = HOST_EX + "watched";
 
     private static final String URL_PREFIX_THUMB_E = "https://ul.ehgt.org/";
@@ -79,6 +90,8 @@ public class EhUrl {
             default:
             case SITE_E:
                 return HOST_E;
+            case SITE_E_PROXY:
+                return HOST_E_PROXY;
             case SITE_EX:
                 return HOST_EX;
         }
@@ -89,6 +102,8 @@ public class EhUrl {
             default:
             case SITE_E:
                 return URL_FAVORITES_E;
+            case SITE_E_PROXY:
+                return URL_FAVORITES_E_PROXY;
             case SITE_EX:
                 return URL_FAVORITES_EX;
         }
@@ -99,6 +114,8 @@ public class EhUrl {
             default:
             case SITE_E:
                 return API_E;
+            case SITE_E_PROXY:
+                return API_E_PROXY;
             case SITE_EX:
                 return API_EX;
         }
@@ -109,6 +126,8 @@ public class EhUrl {
             default:
             case SITE_E:
                 return REFERER_E;
+            case SITE_E_PROXY:
+                return REFERER_E_PROXY;
             case SITE_EX:
                 return REFERER_EX;
         }
@@ -119,6 +138,8 @@ public class EhUrl {
             default:
             case SITE_E:
                 return ORIGIN_E;
+            case SITE_E_PROXY:
+                return ORIGIN_E_PROXY;
             case SITE_EX:
                 return ORIGIN_EX;
         }
@@ -129,6 +150,8 @@ public class EhUrl {
             default:
             case SITE_E:
                 return URL_UCONFIG_E;
+            case SITE_E_PROXY:
+                return URL_UCONFIG_E_PROXY;
             case SITE_EX:
                 return URL_UCONFIG_EX;
         }
@@ -139,6 +162,8 @@ public class EhUrl {
             default:
             case SITE_E:
                 return URL_MY_TAGS_E;
+            case SITE_E_PROXY:
+                return URL_MY_TAGS_E_PROXY;
             case SITE_EX:
                 return URL_MY_TAGS_EX;
         }
@@ -177,6 +202,8 @@ public class EhUrl {
             default:
             case SITE_E:
                 return URL_POPULAR_E;
+            case SITE_E_PROXY:
+                return URL_POPULAR_E_PROXY;
             case SITE_EX:
                 return URL_POPULAR_EX;
         }
@@ -199,6 +226,8 @@ public class EhUrl {
             default:
             case SITE_E:
                 return URL_WATCHED_E;
+            case SITE_E_PROXY:
+                return URL_WATCHED_E_PROXY;
             case SITE_EX:
                 return URL_WATCHED_EX;
         }
